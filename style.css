@@ -1,0 +1,375 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*Configuração do menu e do cabeçalho*/
+header{
+    background-image: url("images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+}
+header .titulo-imagem{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-imagem h1{
+    font-family: 'fraunces', serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+   
+}
+.titulo-imagem img{
+width: 50px;
+align-self: center;
+margin-top: 70px;
+
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.lista{
+    list-style: none;
+    color: white;
+    font-family: 'barlow', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'fraunces', serif;
+    margin-right: 10px;
+    align-self: center;
+    padding: 10px 20px 10px 20px;
+}
+#opções-menu{
+    display: flex;
+    margin: 0px 10px 0px 0px;
+}
+#opções-menu a{
+    text-decoration: none;
+}
+#logo{
+    align-self: center;
+}
+
+.lista:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+/*Configuração das Seções*/
+.seção{
+    display: flex;
+    
+}
+.container-seção{
+    position: relative;
+    width: 50%;
+}
+.container-seção-filho{
+    left: 50%;
+    top: 50%;
+transform: translate(-50%,-50%);
+   position: absolute;
+    width: 400px;
+   
+}
+.container-seção-filho h1{
+    font-family: 'fraunces', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.9rem;
+}
+.container-seção-filho p{
+    font-family: 'Barlow', serif;
+    color: rgba(0, 0, 0, 0.626);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.container-seção-filho #link-ovo{
+   text-decoration: underline 4px ;
+   text-decoration-color: rgb(250, 212, 0);
+   font-family: 'fraunces', serif;
+   color: black;
+   font-size: 1.3rem;
+}
+.container-seção-filho #link-copo{
+    text-decoration: underline 4px ;
+    text-decoration-color: rgba(254, 121, 103, 0.585);
+    font-family: 'fraunces', serif;
+    color: black;
+    font-size: 1.3rem;
+ }
+
+.imagem-seção-ovo {
+    background-image: url("images/desktop/image-transform.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 600px;
+    margin: 0;
+}
+.imagem-seção-copo {
+    background-image: url("images/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 600px;
+}
+/*Configuração das Seção 3*/
+#cereja{
+   
+    position: relative;
+    align-items: flex-end;
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 700px;
+}
+#laranja{
+    position: relative;
+    background-image: url("images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 700px;
+}
+.texto-cereja{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    text-align: center;   
+}
+.texto-laranja{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    text-align: center;   
+}
+#titulo-cereja{
+    font-family:  'fraunces', serif;;
+    color:rgb(37, 86, 75) ;
+}
+#paragrafo-cereja{
+    font-family:  'Barlow', serif;
+    color:rgb(37, 86, 75) ;
+    line-height: 1.5rem;
+}
+#titulo-laranja{
+    font-family:  'fraunces', serif;
+    color:rgb(25, 83, 107);
+}
+#paragrafo-laranja{
+    font-family:  'barlow', serif;
+    color:rgb(25, 83, 107);
+    line-height: 1.5rem;
+}
+/*Configuração da seção de Depoimento de Clientes*/
+#container-depoimentos{
+    position: relative;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+}
+#container-depoimentos h1{
+    font-size: 1.8rem;
+    margin: 100px 0px 0px 0px;
+    font-family: 'fraunces', serif ;
+    color:hsl(232, 10%, 55%);
+    text-align: center;
+}
+
+#container-clientes{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.cliente{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+.cliente img{
+    width: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.cliente #nome{
+    font-family: 'fraunces', serif ;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.cliente #cargo{
+    color: hsl(206, 3%, 55%);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.053);
+}
+.cliente .depoimento{
+    margin-bottom: 50px;
+    line-height: 2rem;
+    font-family: 'barlow', serif ;
+    color: hsl(213, 9%, 39%);
+}
+/*Configuração da seção 5*/
+.container-seção5{
+       width: 30%;
+    height: 600px;
+}
+.container-seção5 img{
+     width: 100%;
+     height: 600px;
+ }
+ /*Configuração do footer*/
+ footer{
+    background-color: hsl(168, 41%, 66%) ;
+    padding-top: 50px;
+    height: 300px;
+ }
+ #container-footer{  
+margin: auto;
+width: 400px;
+text-align: center;
+ }
+ footer .titulo-footer{
+
+  font-family:  'fraunces', serif;
+  font-size: 1.5rem;
+    color:rgb(37, 86, 75);
+ }
+ footer .lista-footer{
+    display: flex;
+   padding-left: 15px;
+   justify-content: space-between;
+   margin-top: 50px;  
+ }
+ footer a{
+    text-decoration: none;
+ }
+ footer a:hover{
+    text-decoration: underline 2px;
+    text-decoration-color:rgba(37, 86, 75, 0.447);
+   
+ }
+ footer .itens-lista-footer{
+    list-style: none;
+    font-family:'barlow', serif;
+    font-size: 1.2rem;
+    color: rgba(37, 86, 75, 0.447);
+ }
+ .imagens-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+ }
+ .imagens-footer img{
+    padding: 0px 20px 0px 20px;
+ }
+ 
+@media screen and (max-width:1200px) {
+    #container-depoimentos{
+        height: 1300px;
+       }
+   #container-depoimentos h1{
+    margin-top: 10px;
+    
+   }
+   #container-clientes{
+    flex-direction: column;
+    margin-top: 30px;
+   }
+.cliente{
+    padding: 0px 5px 40px 5px;
+    
+}
+
+}
+@media screen and (max-width:801px){
+    .seção{
+        height: 1200px;
+        flex-direction: column;
+    }
+    .depoimentos{
+        height: 1400px;
+    }
+    .container-seção{
+        width: 100%;
+        height: 600px;
+        
+    }
+    .container-seção-filho{
+        text-align: center;
+    }
+    .imagem-seção-ovo{
+        
+        order: -1;
+         width: 100%;
+    }
+    .imagem-seção-copo{
+        margin-top: 0px;
+         width: 100%;
+    }
+    #cereja{
+        width: 100%;
+    }
+    #laranja{
+        width: 100%;
+    }
+    #seção5{
+        flex-wrap: wrap;
+    }
+    .container-seção5{
+        width: 50%;
+    }
+    #container-clientes{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:698px){
+    #menu .lista{
+        padding: 3px;
+    }
+    #opções-menu{
+        padding-left: 2px;
+        margin: 10px 0px 10px 0px;
+        justify-content: center;
+    }
+    #logo{
+        margin-top: 20px;
+    }
+    #menu{
+        flex-direction: column;
+        padding: 5px;
+    }
+    
+
+}
+@media screen and (max-width:400px){
+    .container-seção-filho{
+        width: 300px;
+    }
+    #container-footer{
+        width: 300px;
+    }
+}
