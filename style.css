@@ -60,6 +60,7 @@ margin-top: 70px;
 }
 #logo{
     align-self: center;
+    padding-top: 10px;
 }
 
 .lista:hover{
@@ -260,8 +261,8 @@ text-align: center;
  }
  footer .lista-footer{
     display: flex;
-   padding-left: 15px;
-   justify-content: space-between;
+   padding-left: 0;
+   justify-content: space-around;
    margin-top: 50px;  
  }
  footer a{
@@ -362,6 +363,15 @@ text-align: center;
         flex-direction: column;
         padding: 5px;
     }
+    #seção5{
+        height: 800px;
+    }
+    .container-seção5{
+        height: 400px;
+    }
+    .container-seção5 img{
+        height: 400px;
+    }
     
 
 }
@@ -372,4 +382,9 @@ text-align: center;
     #container-footer{
         width: 300px;
     }
+    #menu .lista{
+        margin-right: 0px;
+        padding: 5px;
+    }
+    
 }
