@@ -24,6 +24,17 @@
       <a href="#"><li class="lista">Contatos</li></a>
     </ul>
   </nav>
+  <div id="menu-mobile">
+    <img src="images/icon-hamburger.svg" alt="">
+    <ul class="opções-mobile">
+       <a href="#"><li class="lista">Sobre</li></a> 
+       <a href="#"><li class="lista"> Serviços</li></a>
+       <a href="#"><li class="lista">Projetos</li></a> 
+       <a href="#"><li class="lista">Contatos</li></a>
+     </ul>
+
+
+  </div>
   <div class="titulo-imagem">
     <h1> NÓS SOMOS CRIATIVOS</h1>
 <img src="images/icon-arrow-down.svg" alt="">
@@ -140,5 +151,23 @@
 
 </footer>
 
+<script>
+
+  var navbar = document.getElementById('menu-mobile')
+  navbar.addEventListener('click',mostrar)
+  function mostrar(){
+    var navmenu = document.getElementsByClassName('opções-mobile')[0]
+    
+   
+    if (navmenu.classList.contains('show-mobile')){
+      navmenu.classList.remove('show-mobile');
+    }else{
+      navmenu.classList.add('show-mobile');
+    }
+    
+  }
+
+  
+</script>
 </body>
 </html>

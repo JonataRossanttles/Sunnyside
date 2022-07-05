@@ -27,6 +27,7 @@ header .titulo-imagem{
     font-size: 50px;
     color: white;
     text-align: center;
+    letter-spacing: 6px;
    
 }
 .titulo-imagem img{
@@ -39,6 +40,15 @@ margin-top: 70px;
     display: flex;
     justify-content: space-between;
     padding: 30px;
+}
+#menu-mobile{
+    display: none;
+}
+#menu-mobile a{
+    text-decoration: none;
+}
+.opções-mobile{
+    padding: 0;
 }
 .lista{
     list-style: none;
@@ -68,6 +78,7 @@ margin-top: 70px;
     color: black;
     border-radius: 20px;
 }
+
 /*Configuração das Seções*/
 .seção{
     display: flex;
@@ -363,6 +374,24 @@ text-align: center;
         flex-direction: column;
         padding: 5px;
     }
+    #opções-menu{
+        display: none;
+    }
+    .opções-mobile{
+        
+        opacity: 0;
+        transition: 1s;
+    }
+    #menu-mobile{
+        
+        display: block;
+        padding-left: 10px;
+    }
+   
+    .lista{
+        padding-left: 0;
+        margin-right: 0;
+    }
     #seção5{
         height: 800px;
     }
@@ -371,6 +400,9 @@ text-align: center;
     }
     .container-seção5 img{
         height: 400px;
+    }
+    .show-mobile{
+        opacity: 1;
     }
     
 
@@ -385,6 +417,13 @@ text-align: center;
     #menu .lista{
         margin-right: 0px;
         padding: 5px;
+    }
+    .titulo-imagem img{
+        margin-top: 0;
+    }
+    .lista{
+        margin-right: 0;
+        padding-right: 0;
     }
     
 }
