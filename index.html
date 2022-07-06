@@ -16,6 +16,7 @@
     
 <header>
   <nav id="menu">
+   
     <div id="logo"> <img src="images/logo.svg" alt=""></div>
     <ul id="opções-menu">
      <a href="#"><li class="lista">Sobre</li></a> 
@@ -23,18 +24,17 @@
      <a href="#"><li class="lista">Projetos</li></a> 
       <a href="#"><li class="lista">Contatos</li></a>
     </ul>
+    <div id="menu-mobile">
+      <a href="#" id="hamburguer"><img src="images/icon-hamburger.svg" alt=""></a> 
+      </div>
   </nav>
-  <div id="menu-mobile">
-    <img src="images/icon-hamburger.svg" alt="">
-    <ul class="opções-mobile">
-       <a href="#"><li class="lista">Sobre</li></a> 
-       <a href="#"><li class="lista"> Serviços</li></a>
-       <a href="#"><li class="lista">Projetos</li></a> 
-       <a href="#"><li class="lista">Contatos</li></a>
-     </ul>
-
-
-  </div>
+  <ul class="opções-mobile">
+    <a href="#"><li class="lista">Sobre</li></a> 
+    <a href="#"><li class="lista"> Serviços</li></a>
+    <a href="#"><li class="lista">Projetos</li></a> 
+    <a href="#"><li class="lista">Contatos</li></a>
+  </ul>
+  
   <div class="titulo-imagem">
     <h1> NÓS SOMOS CRIATIVOS</h1>
 <img src="images/icon-arrow-down.svg" alt="">
@@ -153,16 +153,21 @@
 
 <script>
 
-  var navbar = document.getElementById('menu-mobile')
+  var navbar = document.getElementById('hamburguer')
   navbar.addEventListener('click',mostrar)
   function mostrar(){
     var navmenu = document.getElementsByClassName('opções-mobile')[0]
-    
-   
+    var navtitulo = document.getElementsByTagName('h1')[0]
+    var navimg = document.getElementsByTagName('img')[2]
+  
     if (navmenu.classList.contains('show-mobile')){
-      navmenu.classList.remove('show-mobile');
+      navmenu.classList.remove('show-mobile')
+      navtitulo.classList.remove('tshow')
+      navimg.classList.remove('tshow')
     }else{
-      navmenu.classList.add('show-mobile');
+      navmenu.classList.add('show-mobile')
+      navtitulo.classList.add('tshow')
+      navimg.classList.add('tshow')
     }
     
   }

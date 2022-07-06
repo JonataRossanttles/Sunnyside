@@ -49,6 +49,7 @@ margin-top: 70px;
 }
 .opções-mobile{
     padding: 0;
+    display: none;
 }
 .lista{
     list-style: none;
@@ -368,29 +369,53 @@ text-align: center;
         justify-content: center;
     }
     #logo{
-        margin-top: 20px;
+        
+       align-items: flex-start;
+        
+        
     }
     #menu{
-        flex-direction: column;
-        padding: 5px;
+       width: 100%;
+        display: flex;
+        align-content: space-around;
+        padding: 20px 10px 5px 5px;
+        box-sizing: border-box;
+        
     }
     #opções-menu{
         display: none;
     }
     .opções-mobile{
+        display: none;
+        padding: 30px;
+        box-sizing: border-box;
         
-        opacity: 0;
-        transition: 1s;
+    }
+    .opções-mobile a {
+        text-decoration: none;
+        margin: auto;
+        
+        
     }
     #menu-mobile{
-        
+        padding: 20px;
         display: block;
-        padding-left: 10px;
+        
+    }
+    .titulo-imagem img{
+        margin-top: 0;
     }
    
     .lista{
-        padding-left: 0;
-        margin-right: 0;
+        box-sizing: border-box;
+        font-family: 'barlow';
+        width: 120px;
+       margin: auto;
+        text-align: center;
+        color: hsl(213, 9%, 39%);
+    }
+    .lista:hover{
+        background-color: hsl(51, 100%, 49%);
     }
     #seção5{
         height: 800px;
@@ -402,8 +427,16 @@ text-align: center;
         height: 400px;
     }
     .show-mobile{
-        opacity: 1;
+        display: block;
+        margin: auto;
+        background-color: white;
+        width: 100%;
+        box-sizing: border-box;
     }
+    .tshow{
+        display: none;
+    }
+    
     
 
 }
@@ -414,16 +447,14 @@ text-align: center;
     #container-footer{
         width: 300px;
     }
-    #menu .lista{
-        margin-right: 0px;
-        padding: 5px;
-    }
-    .titulo-imagem img{
-        margin-top: 0;
-    }
+   
     .lista{
-        margin-right: 0;
-        padding-right: 0;
+        box-sizing: border-box;
+        font-family: 'barlow';
+        width: 120px;
+       margin: auto;
+        text-align: center;
+        color: hsl(213, 9%, 39%);
     }
     
 }
