@@ -371,7 +371,7 @@ text-align: center;
     #logo{
         
        align-items: flex-start;
-       padding-left: 10px;
+      
        padding-top: 0;
         
         
@@ -400,7 +400,7 @@ text-align: center;
         
     }
     #menu-mobile{
-        padding: 20px;
+        
         display: block;
         
     }
@@ -420,6 +420,7 @@ text-align: center;
     .lista:hover{
         background-color: hsl(51, 100%, 49%);
     }
+   
     #seção5{
         height: 800px;
     }
@@ -431,12 +432,29 @@ text-align: center;
     }
     .show-mobile{
         display: block;
-        margin: auto;
         background-color: white;
-        width: 100%;
-        box-sizing: border-box;
+        width: 95%;
+       margin:auto;
+       margin-top: 30px;
         height: 270px;
+       
+       
         
+    }
+    header{
+        position: relative;
+    }
+    .show-mobile::after{
+        
+        position: absolute;
+        top: 88px;
+       right: 2.5%;
+        content: '';
+        transform: translate(0%, -100%);
+        border-left: 25px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 28px solid white;
+        box-sizing: border-box;
     }
     .tshow{
         display: none;
@@ -453,13 +471,6 @@ text-align: center;
         width: 300px;
     }
    
-    .lista{
-        box-sizing: border-box;
-        font-family: 'barlow';
-        width: 120px;
-       margin: auto;
-        text-align: center;
-        color: hsl(213, 9%, 39%);
-    }
+   
     
 }
