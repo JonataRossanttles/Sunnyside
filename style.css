@@ -411,14 +411,19 @@ text-align: center;
     .lista{
         box-sizing: border-box;
         font-family: 'barlow';
-        width: 120px;
+        width: 140px;
        margin: auto;
        margin-bottom: 10px;
         text-align: center;
         color: hsl(213, 9%, 39%);
+        padding: 15px 25px 15px 25px;
+        
     }
     .lista:hover{
+        font-family: 'fraunces';
+        font-weight: bold;
         background-color: hsl(51, 100%, 49%);
+        border-radius: 60px;
     }
    
     #seção5{
@@ -436,7 +441,7 @@ text-align: center;
         width: 90%;
        margin:auto;
        margin-top: 30px;
-        height: 270px;
+        height: 290px;
        
        
         
